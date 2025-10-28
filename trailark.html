@@ -5,7 +5,237 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TrailArk | Trekking Footwear for Every Explorer</title>
   <link rel="stylesheet" href="style.css">
-  <link href="trailark.css" rel="stylesheet">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a1a;
+  padding: 15px 40px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #00c16e;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00c16e;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1533577116850-9cc66cad8a9b?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #00c16e;
+}
+
+.hero p {
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: #00c16e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #009a59;
+}
+
+/* Features Section */
+.features {
+  padding: 70px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.feature-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+/* Shop Section */
+.shop {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 15px 0 5px;
+}
+
+.product-card p {
+  padding: 0 15px;
+}
+
+.price {
+  color: #00c16e;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* About Section */
+.about {
+  padding: 70px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+footer {
+  background: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+</style>
 </head>
 <body>
   <header class="navbar">
@@ -111,3 +341,4 @@
   </footer>
 </body>
 </html>
+
