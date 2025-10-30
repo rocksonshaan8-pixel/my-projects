@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Making</title>
+    <style>
+        *{
+            margin: auto;
+            padding: auto;
+            box-sizing: border-box;
+            /* background-color: aliceblue; */
+        }
+        body{
+            background-color: aliceblue;
+        }
+        .box{
+            width: 300px;
+            height: auto;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 25px;
+            /* box-sizing: border-box; */
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            position: relative;
+            top: 35px;
+            box-shadow: 5px 5px 5px grey;
+            
+        }
+        .box:hover{
+            box-shadow: 5px 5px 5px lightgreen;
+        }
+        .a{
+            display: inline-block;
+            border: 1px solid black;
+            background-color: white;
+            padding: 5px;
+            /* margin-right: 5px; */
+            border-radius: 10px;
+            font-size: 12px;
+            /* box-shadow: 5px 5px 5px grey; */
+        }
+        .lm{
+            display: inline-block;
+            
+            margin-top: 10px;
+            border:1px solid white;
+            padding: 5px;
+            border-radius: 25px;
+            color: rgb(18, 8, 8);
+            cursor: pointer;
+            background-color:rgb(76, 153, 220);
+        }
+        #img{
+            border: 1px solid white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 25px;
+        }
+        p{
+            margin-top: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img id="img" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/a4/a2/1a/lago-di-braies.jpg?w=1200&h=-1&s=1" alt="Lago Di Braies" width="280" height="180">
+        <div class="a">nature</div>
+        <div class="a">lake</div>
+        <h2>Lago Di Braies</h2>
+        <p>
+            Lago di Braies is a lake in the Prags Dolomites in South Tyrol, Italy. It is situated at an elevation of 1,496
+            metres (4,908 ft) in the Braies Valley, north of the Prags Dolomites. The lake has a maximum depth of 36 metres
+            (118 ft) and an area of 31 hectares (77 acres). It is a popular tourist destination and is known for its clear
+            turquoise waters and stunning mountain scenery.
+        </p>
+        <span class="lm">Read more</span>
+    </div>
+</body>
+</html>
